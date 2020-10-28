@@ -6,12 +6,12 @@ import EditLocationRoundedIcon from "@material-ui/icons/EditLocationRounded";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import PeopleAltRoundedIcon from "@material-ui/icons/PeopleAltRounded";
 import SearchRoundedIcon from "@material-ui/icons/SearchRounded";
-function ChatHeader() {
+function ChatHeader({ user, channelName, ChannelId }) {
   return (
     <div className="chatHeader">
       <div className="chatHeader__left">
         <h3>
-          <span className="chatHeader__hash"> # </span> Text Channel Name
+          <span className="chatHeader__hash"> # </span> {channelName}
         </h3>
       </div>
       <div className="chatHeader__right">
